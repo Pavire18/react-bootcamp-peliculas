@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+@import '../../styles/media-queries.scss';
+
+.footer{
+    background-color:$background-generic ;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_img{
+        width: 210px;
+    }
+}

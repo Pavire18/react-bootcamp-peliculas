@@ -1,0 +1,11 @@
+@import 'variables.scss';
+
+.btn{
+    background-color: $background-generic;
+    color: $font-color-light;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px 30px;
+    border-radius: 50px;
+    line-height: 1;
+}
