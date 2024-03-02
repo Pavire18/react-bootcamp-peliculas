@@ -1,4 +1,7 @@
 {
     "customSection:welcome": "Welcome.",
-    "customSection:info1": "Millions of movies, TV shows, and people to discover. Explore now."
+    "customSection:info1": "Millions of movies, TV shows, and people to discover. Explore now.",
+    "trendingList:trending": "Trending",
+    "trendingList:today": "Today",
+    "trendingList:thisWeek": "This week"
 }
