@@ -12,8 +12,12 @@ const Header = () => {
       <div className="header__nav">
         <img className="header__img" src={logo}></img>
         <div className="header__links">
-          <NavLink className="header__links-link" to="/">Películas</NavLink>
-          <NavLink className="header__links-link" to="/game">Quiz</NavLink>
+          <NavLink className="header__links-link" to="/">
+            Películas
+          </NavLink>
+          <NavLink className="header__links-link" to="/game">
+            Quiz
+          </NavLink>
         </div>
       </div>
       <div>
