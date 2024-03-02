@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 
     @include adaptTo('desktop-xl'){
         //
@@ -42,17 +43,15 @@
     }
     &__lang{
         width: 55px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
         &-btn{
             color: $font-color-light;
             font-size: 16px;
             font-weight: 200;
             margin: 0;
             padding: 8px 0px 8px 8px;
-            
         }
     }
-
-    
-   
-
 }

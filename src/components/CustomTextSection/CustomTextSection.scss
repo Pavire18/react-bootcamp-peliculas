@@ -5,9 +5,10 @@
     padding: 20px;
     height: 365px;
     color: $font-color-light;
-}
-
-
-.img1{
-    background-image: url("../../assets/text-section1.png");
+    &__title{
+        font-size: 36px;
+    }
+    &__text{
+        font-size: 24px;
+    }
 }

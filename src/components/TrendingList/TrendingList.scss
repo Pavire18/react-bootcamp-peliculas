@@ -1,0 +1,65 @@
+@import '../../styles/variables.scss';
+@import '../../styles/media-queries.scss';
+
+
+@mixin boton($color-fondo, $color-texto, $border-radius) {
+    background-color: $color-fondo;
+    color: $color-texto;
+    border-radius: $border-radius;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid $background-generic;
+
+    &:hover {
+      background-color: darken($color-fondo, 10%);
+    }
+  }
+
+
+
+.trending{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    &__options{
+        display: flex;
+        justify-content: left;
+        text-align: center;
+        gap: 20px;
+        flex-direction: row;
+        @include adaptTo('not-mobile'){
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            justify-content: left;
+            text-align: left;
+        }
+    }
+
+    &__select{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    &__btn-t{
+        @include boton($background-generic,$font-color-light,25px)
+    }
+    &__btn-w{
+        @include boton($font-color-light,$background-generic,25px)
+    }
+
+}
+
+.movie-list{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+

@@ -2,8 +2,18 @@ import { FormattedMessage } from "react-intl";
 import "./CustomTextSection.scss";
 
 const CustomTextSection = (props) => {
+  const containerStyle = {
+    backgroundImage: `url(${props.background}) `,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "inherit",
+    position: "relative",
+    width: "100%",
+    height: "300px",
+  };
+
   return (
-    <div className="section img1">
+    <div style={containerStyle} className="section">
       <h2 className="section__title">
         <FormattedMessage id={props.title} />
       </h2>
