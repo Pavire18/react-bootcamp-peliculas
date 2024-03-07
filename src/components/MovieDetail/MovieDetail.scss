@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+@import '../../styles/media-queries.scss';
+
+
+.movie-details{
+    background-color: $background-generic;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    flex-direction: row;
+    padding: 70px;
+    color: $font-color-light;
+    &__info{
+        padding-left: 50px;
+        width: 500px;
+    }
+    &__title{
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
+    }
+    &__subtitle{
+        font-weight: 100;
+        font-size: 14px;
+        margin: 5px 0;
+        padding: 0;
+    }
+    &__rating{
+        display: flex;
+        justify-content: left;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        margin: 20px 0px;
+    }
+}
+

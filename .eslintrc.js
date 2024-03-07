@@ -34,5 +34,7 @@ module.exports = {
     "multiline-ternary": "off",
     "react/no-unescaped-entities": "off",
     "comma-dangle": "off",
+    "array-callback-return": "off",
+    "react/jsx-no-target-blank": "off"
   },
 };

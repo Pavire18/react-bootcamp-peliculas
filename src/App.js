@@ -5,6 +5,7 @@ import { createContext, useEffect, useState } from "react";
 import English from "./lang/en.json";
 import Spanish from "./lang/es.json";
 import { IntlProvider } from "react-intl";
+import MovieDetail from "./components/MovieDetail/MovieDetail";
 
 export const LanguageSelector = createContext();
 
@@ -25,14 +26,12 @@ function App() {
 
   return (
     <div className="app">
-      <LanguageSelector.Provider value={{ setLanguage: setLocale }}>
+      <LanguageSelector.Provider value={{ locale, setLanguage: setLocale }}>
         <IntlProvider messages={messages} locale={locale}>
           <HashRouter>
             <Routes>
               <Route path="/" element={<HomePage></HomePage>}></Route>
-              <Route path="/pokemons" ></Route>
-              <Route path="/pokemon/:pokemonId"></Route>
-              <Route path="/location/:locationName"></Route>
+              <Route path="/:contentType/:movieId" element={<MovieDetail></MovieDetail>}></Route>
               <Route path="/game" ></Route>
             </Routes>
           </HashRouter>

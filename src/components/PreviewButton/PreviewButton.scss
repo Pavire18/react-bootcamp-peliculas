@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+@import '../../styles/media-queries.scss';
+
+.preview-btn{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    background-color: $preview-button;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $font-color-light;
+    margin-top: 60px;
+}

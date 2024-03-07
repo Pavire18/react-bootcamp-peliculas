@@ -3,7 +3,8 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import "./HomePage.scss";
 import imgBg1 from "../../assets/text-section1.png";
-import TrendingList from "../../components/TrendingList/TrendingList";
+import PreviewList from "../../components/PreviewList/PreviewList";
+import MovieList from "../../components/MovieList/MovieList";
 
 const HomePage = () => {
   return (
@@ -11,7 +12,11 @@ const HomePage = () => {
       <Header></Header>
       <div className="page__content">
         <CustomTextSection background={imgBg1} title="customSection:welcome" text="customSection:info1"></CustomTextSection>
-        <TrendingList></TrendingList>
+        <MovieList section="trending"></MovieList>
+        <PreviewList></PreviewList>
+        <MovieList section="most_popular"></MovieList>
+        <CustomTextSection background={imgBg1} title="customSection:welcome" text="customSection:info1"></CustomTextSection>
+        <MovieList section="free"></MovieList>
       </div>
       <Footer></Footer>
     </div>

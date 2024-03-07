@@ -3,5 +3,15 @@
     "customSection:info1": "Millions of movies, TV shows, and people to discover. Explore now.",
     "trendingList:trending": "Trending",
     "trendingList:today": "Today",
-    "trendingList:thisWeek": "This week"
+    "trendingList:thisWeek": "This week",
+    "mostPopularList:mostPopular": "Most Popular",
+    "mostPopularList:movies": "Movies",
+    "mostPopularList:television": "Television",
+    "freeList:whatchFree": "View Free",
+    "freeList:movies": "Movies",
+    "freeList:television": "Television",
+    "movieDetail:userVote": "User Score",
+    "movieDetail:overview": "Overview",
+    "castList": "Main cast",
+    "recommendations": "Recommendations"
 }

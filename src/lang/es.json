@@ -3,5 +3,15 @@
     "customSection:info1": "Millones de películas, programas de televisión y personas por descubrir. Explora ahora.",
     "trendingList:trending": "Tendencias",
     "trendingList:today": "Hoy",
-    "trendingList:thisWeek": "Esta semana"
+    "trendingList:thisWeek": "Esta semana",
+    "mostPopularList:mostPopular": "Lo más popular",
+    "mostPopularList:movies": "Películas",
+    "mostPopularList:television": "Televisión",
+    "freeList:whatchFree": "Ver gratis",
+    "freeList:movies": "Películas",
+    "freeList:television": "Televisión",
+    "movieDetail:userVote": "Puntuación de usuario",
+    "movieDetail:overview": "Vista general",
+    "castList": "Reparto principal",
+    "recommendations": "Recomendaciones"
 }

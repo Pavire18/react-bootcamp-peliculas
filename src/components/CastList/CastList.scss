@@ -1,0 +1,13 @@
+.cast{
+    padding: 35px;
+}
+.cast-list{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 30px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}

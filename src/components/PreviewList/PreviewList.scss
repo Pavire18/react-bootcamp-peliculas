@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+@import '../../styles/media-queries.scss';
+
+
+.trailers{
+    padding: 20px;
+    background-color: $background-generic;
+    margin-bottom: 20px;
+    color: $font-color-light;
+    &__list{
+        display: flex;
+        justify-content: left;
+        gap: 10px;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}

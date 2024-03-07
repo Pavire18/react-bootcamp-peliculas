@@ -43,6 +43,10 @@
     }
     &__lang{
         width: 55px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
         &-btn{
             color: $font-color-light;
             font-size: 16px;
