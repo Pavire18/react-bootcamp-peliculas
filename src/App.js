@@ -6,6 +6,7 @@ import English from "./lang/en.json";
 import Spanish from "./lang/es.json";
 import { IntlProvider } from "react-intl";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
+import Game from "./components/Game/Game";
 
 export const LanguageSelector = createContext();
 
@@ -32,7 +33,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage></HomePage>}></Route>
               <Route path="/:contentType/:movieId" element={<MovieDetail></MovieDetail>}></Route>
-              <Route path="/game" ></Route>
+              <Route path="/game" element={<Game></Game>}></Route>
             </Routes>
           </HashRouter>
         </IntlProvider>

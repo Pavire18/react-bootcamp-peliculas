@@ -3,9 +3,9 @@ import "./PreviewList.scss";
 import { useEffect, useState } from "react";
 
 const API_TOKEN = process.env.REACT_APP_TOKEN;
-
+const API_URL = process.env.REACT_APP_API_URL;
 const PreviewList = () => {
-  const url = "https://api.themoviedb.org/3/discover/movie?sort_by=release_date.desc&language=en-US&page=1&vote_count.gte=1000&vote_average.gte=5";
+  const url = API_URL + "/discover/movie?sort_by=release_date.desc&language=en-US&page=1&vote_count.gte=1000&vote_average.gte=5";
   const [movieList, setMovieList] = useState([]);
 
   useEffect(() => {

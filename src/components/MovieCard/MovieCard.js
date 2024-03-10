@@ -6,8 +6,10 @@ const MovieCard = ({ movie, tv }) => {
   const baseUrl = "https://image.tmdb.org/t/p/w200";
   const rating = Math.round(movie.vote_average * 10);
   let ratingStyle = "";
+  // Content type para poder saber en movieDetail si es tv o movie (son urls distintas).
   const contentType = tv ? 2 : 1;
 
+  // Calcular el rating y estilar el icono de la card en funcion del rating
   if (rating < 50) {
     ratingStyle = "rating-percentage border-red";
   } else if (rating >= 50 && rating <= 69) {

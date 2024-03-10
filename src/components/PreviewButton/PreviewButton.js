@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import "./PreviewButton.scss";
 const API_TOKEN = process.env.REACT_APP_TOKEN;
+const API_URL = process.env.REACT_APP_API_URL;
 
 const PreviewButton = (props) => {
   const [videoUrl, setVideoUrl] = useState("");
 
   useEffect(() => {
-    fetch("https://api.themoviedb.org/3/movie/" + props.movieId + "/videos", {
+    fetch(API_URL + "/movie/" + props.movieId + "/videos", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

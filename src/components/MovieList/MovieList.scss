@@ -19,7 +19,7 @@
 
 
 .trending{
-    padding: 20px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     &__options{
@@ -57,9 +57,22 @@
 
 .movie-list{
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 520px;
+    @include adaptTo('not-mobile'){
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: 20px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: auto;
+    }
+
 }
 

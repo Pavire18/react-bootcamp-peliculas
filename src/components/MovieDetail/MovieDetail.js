@@ -19,10 +19,10 @@ const MovieDetail = () => {
   const [movieDetails, setMovieDetails] = useState({});
   const [movieGenres, setGenres] = useState([]);
   const [movieDuration, setMovieDuration] = useState("");
+  // He usado un state con el valor del rating y el estilo.
   const [rating, setRating] = useState({ value: 0, style: "rating-percentage border-green" });
 
-  console.log(contentType);
-  // const content = contentType === 1 ? "movie/" : "tv/";
+  // Creo el parámetro que tengo que meter en la url para hacer la petición para sacar los datos.
   let content = "movie/";
   if (contentType === "1") {
     content = "movie/";
@@ -31,6 +31,9 @@ const MovieDetail = () => {
   }
   const detailsUrl = API_URL + content + movieId + "?language=" + locale;
 
+  /*
+  Obtengo los datos necesarios para enseñar en pantalla.
+  */
   useEffect(() => {
     console.log(detailsUrl);
     fetch(detailsUrl, {
@@ -46,6 +49,7 @@ const MovieDetail = () => {
         setGenres(dataParsed.genres.map((genre) => genre.name));
         setMovieDuration(Math.floor(dataParsed.runtime / 60) + "h " + (dataParsed.runtime % 60) + "m");
 
+        // Cargo los datos y el estilo del circulo de rating del usuario.
         voteRating = Math.round(dataParsed.vote_average * 10);
         if (voteRating < 50) {
           ratingStyle = "rating-percentage border-red";

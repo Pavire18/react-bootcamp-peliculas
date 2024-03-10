@@ -34,7 +34,7 @@ const RecommendationsList = ({ movieId, contentType }) => {
         {recommendationList?.map((recommendation) => (
           <div key={recommendation.id}>
             {recommendation.poster_path ? <img className="recommendation-list__img" src={`${baseUrl}${recommendation.backdrop_path}`}></img> : ""}
-            <span>{recommendation.original_title}--</span><span>{Math.round(recommendation.vote_average * 10)}%</span>
+            <span>{recommendation.original_title || recommendation.original_name}--</span><span>{Math.round(recommendation.vote_average * 10)}%</span>
           </div>
         ))}
       </div>

@@ -3,16 +3,29 @@
 
 
 .trailers{
-    padding: 20px;
+    padding: 40px;
     background-color: $background-generic;
     margin-bottom: 20px;
     color: $font-color-light;
     &__list{
         display: flex;
-        justify-content: left;
-        gap: 10px;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        gap: 5px;
         flex-direction: row;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 300px;
+        @include adaptTo('not-mobile'){
+            flex-wrap: nowrap;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            gap: 20px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            height: auto;
+        }
     }
 }
